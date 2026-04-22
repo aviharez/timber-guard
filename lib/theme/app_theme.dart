@@ -175,10 +175,10 @@ class AppTheme {
   static SliderThemeData _sliderTheme() {
     return SliderThemeData(
       activeTrackColor: forestGreen,
-      inactiveTrackColor: forestGreen.withOpacity(0.2),
+      inactiveTrackColor: forestGreen.withValues(alpha: 0.2),
       thumbColor: forestGreen,
       thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 10),
-      overlayColor: forestGreen.withOpacity(0.12),
+      overlayColor: forestGreen.withValues(alpha: 0.12),
       overlayShape: const RoundSliderOverlayShape(overlayRadius: 22),
       valueIndicatorColor: earthBrown,
       valueIndicatorShape: const PaddleSliderValueIndicatorShape(),
@@ -187,7 +187,7 @@ class AppTheme {
         fontSize: 13,
         fontWeight: FontWeight.w600
       ),
-      showValueIndicator: ShowValueIndicator.always,
+      showValueIndicator: ShowValueIndicator.onDrag,
       trackHeight: 4
     );
   }
@@ -198,7 +198,7 @@ class AppTheme {
         return Colors.white;
       }),
       trackColor: WidgetStateProperty.resolveWith((states) {
-        return states.contains(WidgetState.selected) ? forestGreen : slateGreyLight.withOpacity(0.4);
+        return states.contains(WidgetState.selected) ? forestGreen : slateGreyLight.withValues(alpha: 0.4);
       }),
       trackOutlineColor: WidgetStateProperty.resolveWith((states) {
         return states.contains(WidgetState.selected) ? forestGreen : slateGreyLight;
@@ -246,7 +246,7 @@ class AppTheme {
           RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))
         ),
         elevation: const WidgetStatePropertyAll(4.0),
-        shadowColor: WidgetStatePropertyAll(Colors.black.withOpacity(0.1))
+        shadowColor: WidgetStatePropertyAll(Colors.black.withValues(alpha: 0.1))
       )
     );
   }

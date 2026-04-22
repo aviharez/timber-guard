@@ -25,7 +25,7 @@ class EquipmentTypeDropdown extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         DropdownButtonFormField<EquipmentType>(
-          value: value,
+          initialValue: value,
           decoration: const InputDecoration(
             hintText: 'Select equipment type'
           ),
