@@ -26,7 +26,7 @@ jobs:
         run: flutter analyze
 
       - name: Build web
-        run: flutter build web --release --base-href "/timber-guard"
+        run: flutter build web --release --base-href "/timber-guard/"
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
