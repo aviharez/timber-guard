@@ -55,7 +55,7 @@ class ValueSliderWidget extends StatelessWidget {
                 color: AppTheme.forestGreenSurface,
                 borderRadius: BorderRadius.circular(20),
                 border: Border.all(
-                  color: AppTheme.forestGreen.withOpacity(0.3), width: 1
+                  color: AppTheme.forestGreen.withValues(alpha: 0.3), width: 1
                 )
               ),
               child: Text(

@@ -67,7 +67,7 @@ class _PremiumDisplay extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: AppTheme.forestGreen.withOpacity(0.35),
+            color: AppTheme.forestGreen.withValues(alpha: 0.35),
             blurRadius: 24,
             offset: const Offset(0, 8)
           )
@@ -84,7 +84,7 @@ class _PremiumDisplay extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.15),
+                    color: Colors.white.withValues(alpha: 0.15),
                     borderRadius: BorderRadius.circular(10)
                   ),
                   child: const Icon(Icons.shield_rounded, color: Colors.white, size: 22)
@@ -100,7 +100,7 @@ class _PremiumDisplay extends StatelessWidget {
                         style: GoogleFonts.inter(
                           fontSize: 13,
                           fontWeight: FontWeight.w500,
-                          color: Colors.white.withOpacity(0.8),
+                          color: Colors.white.withValues(alpha: 0.8),
                           letterSpacing: 0.3
                         ),
                         overflow: TextOverflow.ellipsis
@@ -109,7 +109,7 @@ class _PremiumDisplay extends StatelessWidget {
                         'Shield & Sapling Forestry Insurance',
                         style: GoogleFonts.inter(
                           fontSize: 11,
-                          color: Colors.white.withOpacity(0.55)
+                          color: Colors.white.withValues(alpha: 0.55)
                         ),
                         overflow: TextOverflow.ellipsis
                       )
@@ -152,7 +152,7 @@ class _PremiumDisplay extends StatelessWidget {
 
           // Divider
           Divider(
-            color: Colors.white.withOpacity(0.15),
+            color: Colors.white.withValues(alpha: 0.15),
             height: 1,
             indent: 24,
             endIndent: 24
@@ -192,7 +192,7 @@ class _PremiumDisplay extends StatelessWidget {
             width: double.infinity,
             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
             decoration: BoxDecoration(
-              color: Colors.black.withOpacity(0.2),
+              color: Colors.black.withValues(alpha: 0.2),
               borderRadius: const BorderRadius.vertical(
                 bottom: Radius.circular(16)
               )
@@ -202,7 +202,7 @@ class _PremiumDisplay extends StatelessWidget {
               textAlign: TextAlign.center,
               style: GoogleFonts.inter(
                 fontSize: 11,
-                color: Colors.white.withOpacity(0.55)
+                color: Colors.white.withValues(alpha: 0.55)
               )
             )
           )
@@ -222,7 +222,7 @@ class _PlaceholderAmount extends StatelessWidget {
       style: GoogleFonts.playfairDisplay(
         fontSize: 52,
         fontWeight: FontWeight.w700,
-        color: Colors.white.withOpacity(0.4)
+        color: Colors.white.withValues(alpha: 0.4)
       )
     );
   }
@@ -245,7 +245,7 @@ class _BreakdownRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Icon(icon, size: 14, color: Colors.white.withOpacity(0.6)),
+        Icon(icon, size: 14, color: Colors.white.withValues(alpha: 0.6)),
         const SizedBox(width: 8),
         // Expanded prevents the label from overflowing on narrow viewports.
         Expanded(
@@ -253,7 +253,7 @@ class _BreakdownRow extends StatelessWidget {
             label,
             style: GoogleFonts.inter(
               fontSize: 13,
-              color: Colors.white.withOpacity(0.7)
+              color: Colors.white.withValues(alpha: 0.7)
             ),
             overflow: TextOverflow.ellipsis,
           )
@@ -287,14 +287,14 @@ class _AgentCtaCard extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            AppTheme.earthBrown.withOpacity(0.9),
+            AppTheme.earthBrown.withValues(alpha: 0.9),
             AppTheme.earthBrown
           ]
         ),
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: AppTheme.earthBrown.withOpacity(0.3),
+            color: AppTheme.earthBrown.withValues(alpha: 0.3),
             blurRadius: 20,
             offset: const Offset(0, 8)
           )
@@ -305,7 +305,7 @@ class _AgentCtaCard extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.15),
+              color: Colors.white.withValues(alpha: 0.15),
               shape: BoxShape.circle
             ),
             child: const Icon(Icons.support_agent_rounded, color: Colors.white, size: 36)
@@ -329,7 +329,7 @@ class _AgentCtaCard extends StatelessWidget {
             textAlign: TextAlign.center,
             style: GoogleFonts.inter(
               fontSize: 14,
-              color: Colors.white.withOpacity(0.85),
+              color: Colors.white.withValues(alpha: 0.85),
               height: 1.6
             )
           ),

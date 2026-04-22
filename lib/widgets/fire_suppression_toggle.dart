@@ -23,7 +23,7 @@ class FireSuppressionToggle extends StatelessWidget {
         color: value ? AppTheme.forestGreenSurface : AppTheme.offWhite,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: value ? AppTheme.forestGreen.withOpacity(0.4) : AppTheme.lightBorder,
+          color: value ? AppTheme.forestGreen.withValues(alpha: 0.4) : AppTheme.lightBorder,
           width: 1.5
         )
       ),
@@ -33,7 +33,7 @@ class FireSuppressionToggle extends StatelessWidget {
             duration: const Duration(milliseconds: 200),
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: value ? AppTheme.forestGreen.withOpacity(0.15) : AppTheme.slateGreyMuted.withOpacity(0.15),
+              color: value ? AppTheme.forestGreen.withValues(alpha: 0.15) : AppTheme.slateGreyMuted.withValues(alpha: 0.15),
               borderRadius: BorderRadius.circular(8)
             ),
             child: Icon(
